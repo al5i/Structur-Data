@@ -14,3 +14,14 @@
           fileName_data_3_2 => []
        ]
   ]
+## Добавить файл:
+- Добавить файл в ~/storage/app/nameFile.txt
+- Создать конфиг: ~/config/nameFile.php
+  return [
+  'file' => storage_path('app/nameFile.txt'),
+  ];
+
+## Запуск команды для проверки:
+```bash
+php artisan app:build-file-tree
+```
